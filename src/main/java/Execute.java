@@ -9,7 +9,7 @@ public class Execute {
 
     @Test
     public void countRunMode() {
-        programData = DataFactory.getProgramData();
+        programData = DataFactory.validProgramData();
 
         Counting counting = new Counting();
         counting.countDivisors(programData);
