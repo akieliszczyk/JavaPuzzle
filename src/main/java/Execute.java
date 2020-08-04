@@ -1,4 +1,4 @@
-import model.Counting;
+import programs.Counting;
 
 public class Execute {
 

@@ -1,4 +1,6 @@
-package model;
+package programs;
+
+import model.ProgramData;
 
 public class Counting {
 
