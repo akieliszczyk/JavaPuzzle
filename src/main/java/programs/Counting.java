@@ -2,12 +2,16 @@ package programs;
 
 import model.ProgramData;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Counting {
 
-    public void countDivisors(ProgramData programData) {
+    public List countDivisors(ProgramData programData) {
 
         Integer run = 0;
         Integer program = 0;
+        List list = new ArrayList();
 
         for ( int plc = 1; plc<= programData.getPlc(); plc++ ) {
             int divisorsQuantity = 0;
@@ -25,8 +29,9 @@ public class Counting {
             else
                 run++;
         }
-        System.out.println("There are " + program + "PLC\'s in PROGRAM mode");
-        System.out.println("There are " + run + "PLC\'s in RUN mode");
 
+        list.add(run);
+        list.add(program);
+        return list;
     }
 }
