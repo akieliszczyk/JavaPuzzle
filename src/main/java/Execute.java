@@ -8,7 +8,7 @@ public class Execute {
     ProgramData programData;
 
     @Test
-    public void coundDivisors() {
+    public void countDivisors() {
         programData = DataFactory.getProgramData();
 
         Counting counting = new Counting();
