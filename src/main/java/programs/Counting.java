@@ -4,13 +4,7 @@ import model.ProgramData;
 
 public class Counting {
 
-    ProgramData programData = new ProgramData();
-
-
-    public void countDivisors() {
-        programData.setPlc(1100);
-        programData.setEmployee(1100);
-
+    public void countDivisors(ProgramData programData) {
 
         Integer run = 0;
         Integer program = 0;
