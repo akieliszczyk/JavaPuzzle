@@ -5,10 +5,9 @@ import provider.DataFactory;
 
 public class Execute {
 
-    ProgramData programData;
+    private static ProgramData programData;
 
-    @Test
-    public void countRunMode() {
+    public static void main(String[] args) {
         programData = DataFactory.validProgramData();
 
         Counting counting = new Counting();
