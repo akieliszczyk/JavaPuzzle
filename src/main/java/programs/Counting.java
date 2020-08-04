@@ -32,6 +32,8 @@ public class Counting {
 
         list.add(run);
         list.add(program);
+        list.add(run+program);
         return list;
     }
+
 }

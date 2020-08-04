@@ -9,4 +9,13 @@ public class DataFactory {
         programData.setPlc(1100);
         return programData;
     }
+
+    public static ProgramData dataForTest_1() {
+        ProgramData programData = new ProgramData();
+        programData.setEmployee(10);
+        programData.setPlc(15);
+        programData.setRunMode(8);
+        programData.setProgramMode(7);
+        return programData;
+    }
 }
