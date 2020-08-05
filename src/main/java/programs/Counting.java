@@ -7,11 +7,17 @@ import java.util.List;
 
 public class Counting {
 
-    public List countDivisors(ProgramData programData) {
+    private ProgramData programData;
+
+    public Counting(ProgramData programData) {
+        this.programData = programData;
+    }
+
+    public List<Integer> countDivisors() {
 
         Integer run = 0;
         Integer program = 0;
-        List list = new ArrayList();
+        List<Integer> list = new ArrayList<Integer>();
 
         for ( int plc = 1; plc<= programData.getPlc(); plc++ ) {
             int divisorsQuantity = 0;
